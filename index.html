@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selene Launcher — a fast Minecraft: Java Edition launcher</title>
+  <meta name="description" content="A free, open-source Minecraft: Java Edition launcher for licensed accounts. Light on old PCs, mods and modpacks from Modrinth and CurseForge in one click, no ads and no tracking.">
+  <link rel="canonical" href="https://selene.games/">
+  <link rel="alternate" hreflang="en" href="https://selene.games/">
+  <link rel="alternate" hreflang="ru" href="https://selene.games/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://selene.games/">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon-128.png">
+  <meta name="theme-color" content="#0b0a1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Selene">
+  <meta property="og:title" content="Selene Launcher">
+  <meta property="og:description" content="A fast, good-looking Minecraft: Java Edition launcher for licensed accounts.">
+  <meta property="og:url" content="https://selene.games/">
+  <meta property="og:image" content="https://selene.games/assets/og.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    // First visit from a Russian-speaking system goes to the Russian page; a language picked
+    // by hand is remembered.
+    try {
+      const picked = localStorage.getItem("lang");
+      const russian = navigator.languages?.some((lang) => /^(ru|uk|be|kk)\b/i.test(lang));
+      if (picked === "ru" || (!picked && russian)) location.replace("/ru/");
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt="">Selene</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#why">Why Selene</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/LunixSudo/selene-launcher">GitHub</a>
+      </nav>
+      <a class="lang" href="/ru/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('lang','ru')}catch{}">Русский</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <span class="badge" data-prerelease>Early development · first release soon</span>
+        <h1>Selene <span>Launcher</span></h1>
+        <p class="lead">A fast, good-looking launcher for Minecraft: Java Edition. Mods and modpacks in a click, careful with old PCs, and free of ads and tracking.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/LunixSudo/selene-launcher/releases" data-file="windows">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.5 1.2L21 21v-8.5h-9.5zm0-15.4v7.2H21V3z"/></svg>
+            Download for Windows
+          </a>
+          <a class="button" href="https://github.com/LunixSudo/selene-launcher">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2"/></svg>
+            Source code
+          </a>
+        </div>
+        <p class="note" data-version="Version {version} · Windows 10 and 11, 64-bit" hidden></p>
+        <p class="note" data-prerelease>There is no release yet. Test builds are on <a href="https://github.com/LunixSudo/selene-launcher/actions/workflows/build.yml">GitHub</a>.</p>
+      </div>
+      <div class="hero-art">
+        <img src="/assets/logo.svg" alt="Selene Launcher logo" width="380" height="380">
+      </div>
+    </div>
+
+    <section id="why">
+      <div class="wrap">
+        <h2>Why Selene</h2>
+        <p class="section-lead">You need a Minecraft: Java Edition license to play: you sign in with your Microsoft account. There is no cracked mode.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+            <h3>Light on old PCs</h3>
+            <p>Memory, Java and its flags are picked for your RAM, processor and mods. The game starts on the discrete graphics card, and the launcher stays out of the way while you play.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Works when sites are down</h3>
+            <p>If Mojang, a loader site, Modrinth or CurseForge cannot be reached, files come from official mirrors and then public ones, always checked against the official checksums.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-3a2 2 0 1 0-4 0H9v4a2 2 0 1 1 0 4v4h4a2 2 0 1 1 4 0h3v-4a2 2 0 1 0 0-4z"/></svg></div>
+            <h3>Mods in a click</h3>
+            <p>Modrinth and CurseForge in one catalog, dependencies added for you, and updates that keep the add-ons you put in yourself.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+            <h3>Private</h3>
+            <p>No servers of its own, no analytics and no ads. Your sign-in stays in the system credential store and only goes to Microsoft and Mojang.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Everything in one place</h2>
+        <p class="section-lead">From the first alphas to the newest snapshots, with Fabric, Quilt, Forge and NeoForge.</p>
+        <div class="features">
+          <article class="card">
+            <h3>Game</h3>
+            <ul>
+              <li>Every version, with the right Java downloaded for each</li>
+              <li>Fabric, Quilt, Forge (from 1.7.10) and NeoForge, installed in the background</li>
+              <li>Automatic memory and Java arguments</li>
+              <li>A new instance downloads right away, so the first start is quick</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Mods and modpacks</h3>
+            <ul>
+              <li>Mods, resource packs, shaders and data packs from Modrinth and CurseForge</li>
+              <li>Modpack updates that keep your own add-ons</li>
+              <li>Import and export of <code>.mrpack</code> and CurseForge <code>.zip</code></li>
+              <li>OptiFine from its official site, right inside the launcher</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Instances</h3>
+            <ul>
+              <li>Groups, icons, covers and desktop shortcuts</li>
+              <li>Moving to another game version with mods swapped for matching builds</li>
+              <li>Worlds with backups, servers in one click, screenshots</li>
+              <li>Play time for each instance and in total</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Accounts and skins</h3>
+            <ul>
+              <li>Microsoft sign-in, several accounts at once</li>
+              <li>Picking and changing your player name in the launcher</li>
+              <li>An animated 3D skin preview, a skin library and capes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>When something breaks</h3>
+            <ul>
+              <li>A game console and crash analysis with advice</li>
+              <li>A button that stops a hung game</li>
+              <li>"Report a problem" that fills in the bug report for you</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Looks</h3>
+            <ul>
+              <li>Light and dark themes, Mica and glass styles</li>
+              <li>Optional live backgrounds, animations and click sounds</li>
+              <li>Russian and English, plus seven machine-translated languages</li>
+              <li>A Discord status that can be turned off</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="wrap">
+        <h2>Download</h2>
+        <p class="section-lead">Official builds come only from this site and the project's GitHub. Copies from other sites are not ours and may be changed.</p>
+        <div class="download">
+          <article class="platform">
+            <h3><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.5 1.2L21 21v-8.5h-9.5zm0-15.4v7.2H21V3z"/></svg>Windows</h3>
+            <p>Windows 10 or 11, 64-bit. The installer adds Microsoft Edge WebView2 if it is missing and updates itself. The portable version keeps all its data in its own folder.</p>
+            <div class="actions">
+              <a class="button primary" href="https://github.com/LunixSudo/selene-launcher/releases" data-file="windows">Installer</a>
+              <a class="button" href="https://github.com/LunixSudo/selene-launcher/releases" data-file="portable">Portable .zip</a>
+            </div>
+          </article>
+          <article class="platform">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg>Linux</h3>
+            <p>64-bit, with WebKitGTK 4.1. The Linux builds are new and do not update themselves yet.</p>
+            <div class="actions">
+              <a class="button" href="https://github.com/LunixSudo/selene-launcher/releases" data-file="appimage">AppImage</a>
+              <a class="button" href="https://github.com/LunixSudo/selene-launcher/releases" data-file="deb">.deb</a>
+            </div>
+          </article>
+        </div>
+        <p class="requirements">You need a Microsoft account that owns Minecraft: Java Edition. Java is downloaded by the launcher. The Windows installer is not signed yet, so SmartScreen may warn about it.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="privacy">
+          <div>
+            <h2>Your data stays yours</h2>
+            <p>The launcher collects nothing and has no servers of its own. The privacy policy lists every service it talks to and why.</p>
+          </div>
+          <a class="button" href="https://github.com/LunixSudo/selene-launcher/blob/main/PRIVACY.md">Privacy policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav aria-label="Links">
+        <a href="https://github.com/LunixSudo/selene-launcher">GitHub</a>
+        <a href="https://github.com/LunixSudo/selene-launcher/releases">Releases</a>
+        <a href="https://github.com/LunixSudo/selene-launcher/issues">Report a problem</a>
+        <a href="https://github.com/LunixSudo/selene-launcher/blob/main/PRIVACY.md">Privacy</a>
+        <a href="https://github.com/LunixSudo/selene-launcher/blob/main/LICENSE">License (GPL-3.0)</a>
+      </nav>
+      <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+      <p>Minecraft is a trademark of Mojang AB. Windows is a trademark of Microsoft Corporation.</p>
+    </div>
+  </footer>
+</body>
+</html>

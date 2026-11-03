@@ -12,3 +12,8 @@ To preview locally:
 ```sh
 python3 -m http.server 8000
 ```
+
+`pnpm install && pnpm lint` checks the pages the way CI does. Problems with the launcher
+itself go to its [issue tracker](https://github.com/LunixSudo/selene-launcher/issues).
+
+The site is licensed under the [GPL-3.0](LICENSE), like the launcher.

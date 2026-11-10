@@ -7,6 +7,6 @@
     "lint": "html-validate index.html ru/index.html 404.html"
   },
   "devDependencies": {
-    "html-validate": "11.18.0"
+    "html-validate": "11.19.0"
   }
 }

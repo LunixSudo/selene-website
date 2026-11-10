@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       html-validate:
-        specifier: 11.18.0
-        version: 11.18.0
+        specifier: 11.19.0
+        version: 11.19.0
 
 packages:
 
@@ -33,8 +33,8 @@ packages:
   fast-uri@3.1.9:
     resolution: {integrity: sha512-hS/0Wt3Ya043oKXs0sIxrMpKQITXhMLIrVAKKXi4gozGC9v7YRWVnXIZzjNPTO02M9BdxLCWqK1yRXgNziVyJQ==}
 
-  html-validate@11.18.0:
-    resolution: {integrity: sha512-9+cP5LyLG2blk1W8pYACmgTuFnqOuMZS8rt7G0q72wH7xqdduKE0qyV1qhwsKr/tjqmqscq81yyE6mNUuUex3Q==}
+  html-validate@11.19.0:
+    resolution: {integrity: sha512-+QSAz0rcgoBoX6MoVve5EAxPcmvmg+aPqChVGA9oYN3gM7IwF9NBFtEEJOzGokBeaExWlTM4eUV6atj2h5pCtg==}
     engines: {node: ^22.22.0 || >= 24.8.0}
     hasBin: true
     peerDependencies:
@@ -101,7 +101,7 @@ snapshots:
 
   fast-uri@3.1.9: {}
 
-  html-validate@11.18.0:
+  html-validate@11.19.0:
     dependencies:
       '@html-validate/stylish': 6.1.0
       '@sidvind/better-ajv-errors': 7.0.0(ajv@8.20.0)

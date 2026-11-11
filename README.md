@@ -1,7 +1,8 @@
 # selene.games
 
 The website of [Selene Launcher](https://github.com/LunixSudo/selene-launcher), served by
-GitHub Pages from the `main` branch.
+GitHub Pages from the `main` branch. Changes land in `dev` first and reach `main` when they
+are published.
 
 Plain HTML and CSS with no build step: `index.html` is the English page, `ru/index.html` the
 Russian one, and both share `assets/`. The download buttons point at the releases page and

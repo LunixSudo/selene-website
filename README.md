@@ -7,8 +7,9 @@ Plain HTML and CSS with no build step: `index.html` is the English page, `ru/ind
 Russian one, and both share `assets/`. The download buttons point at the releases page and
 `assets/site.js` swaps in the newest release's files when GitHub answers.
 
-`discord/` and `telegram/` are short links: selene.games/discord and selene.games/telegram
-forward to the community server and the news channel.
+`discord/`, `telegram/` and `youtube/` are short links: selene.games/discord,
+selene.games/telegram and selene.games/youtube forward to the community server, the news
+channel and the video channel.
 
 `assets/screens/` holds screenshots of the launcher in each language. The fonts in
 `assets/fonts/` are Onest and Pixelify Sans under the SIL Open Font License, served from the

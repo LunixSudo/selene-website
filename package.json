@@ -4,7 +4,7 @@
   "license": "GPL-3.0-or-later",
   "packageManager": "pnpm@10.18.0",
   "scripts": {
-    "lint": "html-validate index.html ru/index.html 404.html"
+    "lint": "html-validate index.html ru/index.html 404.html discord/index.html telegram/index.html"
   },
   "devDependencies": {
     "html-validate": "11.19.0"
